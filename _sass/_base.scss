@@ -102,6 +102,7 @@ section, aside { padding: 50px 0; min-height: 80%; }
 
 // Navigation
 .navbar-default {
+    display: none;
     background-color: white;
     border-color: rgba($theme-dark-dark, .5);
     @include sans-serif-font;
@@ -136,6 +137,7 @@ section, aside { padding: 50px 0; min-height: 80%; }
     }
     .navbar-brand { padding: 10px; }
     @media (min-width: 768px) {
+	display: block;
         background-color: transparent;
         border-color: rgba(white, .3);
         .navbar-header .navbar-brand {
