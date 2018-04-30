@@ -47,6 +47,12 @@
   }
 }
 
+footer { margin: 10px; min-height: 30%; }
+footer .quote    { font-family: 'Exo', sans-serif; font-weight: bold; font-size: 30px;}
+footer .quote-by { font-family: 'Exo', sans-serif; font-weight: 400; font-size: 22px;}
+footer .fa { color: #fff; margin: 25px; }
+
+
 html,
 body {
     height: 100%;
@@ -290,15 +296,6 @@ body {
 .btn:hover {
     font-weight: 700;
     text-transform: uppercase;
-}
-
-// footer
-footer { margin: 10px; min-height: 30%; }
-footer .quote    { font-family: 'Exo', sans-serif; font-weight: bold; font-size: 30px;}
-footer .quote-by { font-family: 'Exo', sans-serif; font-weight: 400; font-size: 22px;}
-footer .fa {
-    color: #fff;
-    margin: 25px;
 }
 
 // Extras
