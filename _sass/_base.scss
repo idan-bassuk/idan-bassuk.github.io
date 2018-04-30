@@ -2,7 +2,7 @@
 .social { margin: 20px; }
 .about { font-size: 18px; }
 #profile-photo , #about-txt {padding-top: 25px; padding-bottom: 25px;}
-
+section, aside {min-height: 80%;}
 html,
 body {
     height: 100%;
@@ -44,37 +44,16 @@ p {
     margin-bottom: 20px;
 }
 
-.bg-primary {
-    background-color: $theme-primary;
-}
+.bg-primary   { background-color: $theme-primary; }
+.bg-dark      { background-color: $theme-dark;    color: white; }
+.bg-very-dark { background-color: #424040;        color: white; }
+.bg-light     { background-color: white;          color: gray; *>hr {border-color: gray;} }
 
-.bg-dark {
-    background-color: $theme-dark;
-    color: white;
-}
+.text-faded { color: rgba(white, .7); }
 
-.bg-very-dark{
-    background-color: #424040;
-    color: white;
-}
+section, aside { padding: 50px 0; min-height: 80%; }
 
-.bg-light {
-    background-color: white; 
-    color: gray; 
-    *>hr {border-color: gray;} 
-}
-
-.text-faded {
-    color: rgba(white, .7);
-}
-
-section, aside {
-    padding: 50px 0;
-}
-
-.no-padding {
-    padding: 0;
-}
+.no-padding { padding: 0; }
 
 // Navigation
 .navbar-default {
