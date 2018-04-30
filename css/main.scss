@@ -36,11 +36,12 @@
 // variables.less
 $theme-primary: #1d3760;
 $theme-primary-light: white;
-$theme-primary-front: white;
 
 $theme-secondary: #F05F40;
 
 $theme-dark: #424040;
+$theme-dark-dark: rgba(0, 0, 0, 0.65);
+$theme-dark-light: white;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
