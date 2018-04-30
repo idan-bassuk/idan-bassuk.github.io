@@ -8,6 +8,9 @@ url: "https://idanbass.github.io/" # the base hostname & protocol for your site
 
 social:
   facebook-official: https://www.facebook.com/idan/
+  
+quote = If you can't explain it simply, you don't understand it well enough. 
+quote-by = Albert Einstein
 
 # Build settings
 markdown: kramdown
