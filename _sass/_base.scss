@@ -93,7 +93,14 @@ p {
 
 .bg-primary   { background-color: $theme-primary; }
 .bg-dark      { background-color: $theme-dark;    color: $theme-dark-light; }
-.bg-light     { background-color: white;          color: $theme-dark-dark; *>hr {border-color: $theme-dark-dark; } }
+.bg-light     { background-color: white;          color: $theme-dark-dark; }
+.bg-light hr  { border-color: $theme-dark-dark; } 
+.bg-light .title { color: $theme-primary; } 
+.bg-light .info { font-size: 14px; } 
+.bg-light .body { color: $theme-dark-dark; } 
+.bg-light .btn-default { color: $theme-dark-dark; } 
+.no-link { text-decoration: none; }
+
 
 .text-faded { color: rgba(white, .7); }
 
