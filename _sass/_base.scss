@@ -47,7 +47,7 @@
   }
 }
 
-footer { margin: 0px; min-height: 30%; width: 100%; padding: 40px;}
+footer { margin: 0px; min-height: 30%; width: 100% !important; padding: 40px;}
 footer .quote    { font-family: 'Exo', sans-serif; font-weight: bold; font-size: 30px;}
 footer .quote-by { font-family: 'Exo', sans-serif; font-weight: 400; font-size: 22px;}
 footer .fa { color: #fff; margin: 25px; }
