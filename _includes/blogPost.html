@@ -1,23 +1,23 @@
-<h3>summary of Professor Robert Floyd's acceptance speech</h3>
+<h2><a class="no-link" href="https://medium.com/@Idan.Bassuk/automated-testing-of-deep-learning-systems-24b7ab3f8aa5">Automated Testing of Deep Learning Systems</a></h2>
 <div class="text-muted">
-I wrote a summary of Professor Robert Floyd's acceptance speech for his Turing Award (considered the highest award in computer science), based on a really good blog post and skimming through the original text (links to both in the comments).
-I found it really interesting, and of course would love to hear your thoughts about it.
 
-In his speech, he chose to speak about the importance of mastering programming paradigms and ensembling them into programming languages and tools.
-Some examples of programming paradigms are:
-1) Structured Programming - making extensive use of subroutines and block-structures.
-2) Object Oriented Programming.
-3) Literate Programming - The code is structured as a designed (hypertext) document, when the (designed) documentation is an integral part of the code.
+Neural networks are now practically doing most of the coding instead of us (and better than us) in many fields, but we don’t have a satisfactory methodology for testing their behavior.
 
-As a generalization - these paradigms are different high level ways to tackle programming problems.
+A very interesting recent paper that was covered today on “The Morning Paper” blog, shows a simple and elegant approach for testing neural networks.
 
-He states that the current state of the art of programming is broken, which reflects in programs which are unreliable, delivered late, unresponsive to change, inefficient, and expensive. It was written in 1978, and was probably improved a lot but I think it's still mostly true. He also states that it's mainly due to the paradigms used by programmers, and the lack of sufficient support for relevant paradigms in programming languages and tools (e.g. IDEs).
+Basically they say that current Deep Learning testing methods, ‘depend heavily on manually labeled data and therefore often fail to expose erroneous behaviors for rare inputs’.
 
-In addition, he states that there are two main issues that prevent from many paradigms to be mastered by programmers:
-1) "Most texts [and courses] on computer programming imply that the content of programming is the knowledge of the algorithms and language definitions described in their pages". Many times is no explicit discussion and distillation of the underlying paradigms enabled by the language learned.
-2) "In computer science, one sees several ... communities, each speaking its own language and using its own paradigms". There is not enough diffusion between people who master different paradigms and furthermore - many times the tools that we use limit our ability to understand or adopt another paradigm even if we hear about it.
+Even if your test set is relatively large, it still might activate only a subset of the network’s neurons, and the rest will not be tested. The untested part could still be activated in the real world by rare examples, and cause extreme and unexpected behavior.
 
-He gives two tips for programmers who want to extend their mastery in programming paradigms - 
-1) After solving a challenging problem, I solve it again from scratch, retracing only the insight of the earlier solution. I repeat this until the solution is as clean and direct as I can hope for. Then I look for a general rule for attacking similar problems, that would have led me to approach the given problem in the most efficient way the first time. Often, such a rule is of permanent value.
-2) ... my message to the serious programmer is to spend a part of your working day examining and refining your own methods. Even though programmers are always struggling to meet some future or past deadline, methodological abstraction is a wise long term investment.
+They learn realistic augmentations to the test images, to maximize two objectives:
+
+1) Similar to code coverage, which is a well known software testing technique, they try to maximize “neuron coverage” during their tests. They do this in order to maximize the probability they uncover as much of the possible (even if rare) wrong behaviors that were learned by the neural net.
+
+2) They take an ensemble of at least two comparable but independently trained models. They try to find samples which maximize the different models disagreement. To the best of my understanding, they use this approach since the images they’re using are learned augmentations, so they have no verified ground-truth for them.
+
+Maximizing both of these objectives in parallel helps uncover rare and potentially dangerous behaviors.
+
+They limit their learned augmentations by pre-defining the different transformations. For example — changing the lighting by adding a constant to all pixel values, and they learn the correct value that maximizes both objectives above.They don’t allow unrealistic adversarial examples which contain only tiny perturbations that will be undetected by the human eye.
+
+In the image you can see an example of a synthetic input learned by their approach (changing the lightning only), that induced extreme and dangerous behavior in a self-driving car network (crashing into the rails).
 </div>
