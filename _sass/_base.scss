@@ -2,7 +2,6 @@
 .social { margin: 20px; }
 .about { font-size: 18px; }
 #profile-photo , #about-txt {padding-top: 25px; padding-bottom: 25px;}
-.sub-title {font-family: 'Exo', sans-serif;}
 
 .fancy {
   font-family: 'Lato', sans-serif;
@@ -63,9 +62,9 @@ a {
     }
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Bungee', cursive;
-}
+h1 { font-family: 'Bungee', cursive; }
+h2 { font-family: 'Exo', sans-serif; }
+h3, h4, h5, h6 { font-family: 'Lato', sans-serif; }
 
 p {
     font-size: 16px;
