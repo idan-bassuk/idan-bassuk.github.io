@@ -60,7 +60,7 @@ body {
 }
 
 hr {
-    border-color: $theme-primary-front;
+    border-color: $theme-primary-light;
     border-width: 3px;
     max-width: 50px;
 }
@@ -69,9 +69,9 @@ hr.light { border-color: white; }
 
 a {
     @include transition-all;
-    color: $theme-primary-front;
+    color: $theme-primary-light;
     &:hover,
-    &:focus { color: darken($theme-primary-front, 10%); }
+    &:focus { color: darken($theme-primary-light, 10%); }
 }
 
 h1 { font-family: 'Bungee', cursive; }
@@ -243,7 +243,7 @@ header {
          margin-left: auto;
          margin-right: auto;
      }
-    .person-name { color: $theme-primary-front; }
+    .person-name { color: $theme-primary-light; }
 
     @media (min-width: 970px) {
 	.img-responsive {
