@@ -5,6 +5,9 @@
 
 .fancy {
   font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
   line-height: 0.5;
   text-align: center;
 }
@@ -19,8 +22,8 @@
   height: 1px;
   border-bottom: 1px solid white;
   border-top: 1px solid white;
-  top: 0;
-  width: 30%;
+  top: 50%;
+  width: 50%;
 }
 .fancy span:before {
   right: 100%;
