@@ -253,8 +253,6 @@ header {
     p { margin-bottom: 0; }
 }
 
-#contact { margin: 10px; min-height: 30%; }
-
 .call-to-action {
     h2 { margin: 0 auto 20px; }
 }
@@ -294,8 +292,11 @@ body {
     text-transform: uppercase;
 }
 
-// Contact
-#contact .fa {
+// footer
+footer { margin: 10px; min-height: 30%; }
+footer .quote    { font-family: 'Exo', sans-serif; font-weight: bold; font-size: 30px;}
+footer .quote-by { font-family: 'Exo', sans-serif; font-weight: 400; font-size: 22px;}
+footer .fa {
     color: #fff;
     margin: 25px;
 }
