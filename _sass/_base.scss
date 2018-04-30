@@ -1,6 +1,6 @@
 .social { margin: 20px 10px; }
 .social a, .social a:hover { text-decoration: none; }
-svg path { fill: $theme-primary-light; }
+
 .fa-quote-left { padding-right: 10px; }
 
 .about { font-size: 18px; }
@@ -43,6 +43,8 @@ svg path { fill: $theme-primary-light; }
   margin-left: 15px;
 }
 
+svg { width: 100%; height: auto; max-height: 35px; }
+svg path { fill: $theme-primary-light; }
 .social i, .social .i {
     width: 45px;
     height: 45px;
