@@ -2,6 +2,10 @@
 .social { margin: 20px; }
 .about { font-size: 18px; }
 #profile-photo , #about-txt {padding-top: 25px; padding-bottom: 25px;}
+#about {
+	*>h2 {font-family: 'Exo', cursive;}
+	*>.contact-txt {font-family: 'Lato', cursive;}
+}
 
 html,
 body {
