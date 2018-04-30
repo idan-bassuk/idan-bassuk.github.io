@@ -5,23 +5,37 @@
 
 <div class="body">
 
-Neural networks are now practically doing most of the coding instead of us (and better than us) in many fields, but we don’t have a satisfactory methodology for testing their behavior.
+<p>Neural networks are now practically doing most of the coding instead of us
+  (and better than us) in many fields, but we don’t have a satisfactory methodology for testing their behavior.</p>
 
-A very interesting recent paper that was covered today on “The Morning Paper” blog, shows a simple and elegant approach for testing neural networks.
+<p>A very interesting recent paper that was covered today on “The Morning Paper” blog, 
+  shows a simple and elegant approach for testing neural networks.</p>
 
-Basically they say that current Deep Learning testing methods, ‘depend heavily on manually labeled data and therefore often fail to expose erroneous behaviors for rare inputs’.
+<p>Basically they say that current Deep Learning testing methods, ‘depend heavily on manually labeled 
+  data and therefore often fail to expose erroneous behaviors for rare inputs’.</p>
 
-Even if your test set is relatively large, it still might activate only a subset of the network’s neurons, and the rest will not be tested. The untested part could still be activated in the real world by rare examples, and cause extreme and unexpected behavior.
+<p>Even if your test set is relatively large, it still might activate only a subset of the network’s neurons,
+  and the rest will not be tested. The untested part could still be activated in the real world by rare examples,
+  and cause extreme and unexpected behavior.</p>
 
-They learn realistic augmentations to the test images, to maximize two objectives:
+<p>They learn realistic augmentations to the test images, to maximize two objectives:
 
-1) Similar to code coverage, which is a well known software testing technique, they try to maximize “neuron coverage” during their tests. They do this in order to maximize the probability they uncover as much of the possible (even if rare) wrong behaviors that were learned by the neural net.
+<p>1) Similar to code coverage, which is a well known software testing technique, 
+  they try to maximize “neuron coverage” during their tests. They do this in order to maximize 
+  the probability they uncover as much of the possible (even if rare) wrong behaviors that were learned by the neural net.</p>
 
-2) They take an ensemble of at least two comparable but independently trained models. They try to find samples which maximize the different models disagreement. To the best of my understanding, they use this approach since the images they’re using are learned augmentations, so they have no verified ground-truth for them.
+<p>2) They take an ensemble of at least two comparable but independently trained models. 
+  They try to find samples which maximize the different models disagreement. 
+  To the best of my understanding, they use this approach since the images they’re using are learned augmentations, 
+  so they have no verified ground-truth for them.</p>
 
-Maximizing both of these objectives in parallel helps uncover rare and potentially dangerous behaviors.
+<p>Maximizing both of these objectives in parallel helps uncover rare and potentially dangerous behaviors.</p>
 
-They limit their learned augmentations by pre-defining the different transformations. For example — changing the lighting by adding a constant to all pixel values, and they learn the correct value that maximizes both objectives above.They don’t allow unrealistic adversarial examples which contain only tiny perturbations that will be undetected by the human eye.
+<p>They limit their learned augmentations by pre-defining the different transformations. 
+  For example — changing the lighting by adding a constant to all pixel values, and they learn 
+  the correct value that maximizes both objectives above.They don’t allow unrealistic adversarial 
+  examples which contain only tiny perturbations that will be undetected by the human eye.</p>
 
-In the image you can see an example of a synthetic input learned by their approach (changing the lightning only), that induced extreme and dangerous behavior in a self-driving car network (crashing into the rails).
+<p>In the image you can see an example of a synthetic input learned by their approach (changing the lightning only), 
+  that induced extreme and dangerous behavior in a self-driving car network (crashing into the rails).</p>
 </div>
