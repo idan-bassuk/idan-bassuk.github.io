@@ -99,7 +99,7 @@ p {
 .bg-light .info { font-size: 14px; } 
 .bg-light .body { color: $theme-dark-dark; } 
 .bg-light .btn-default { color: $theme-dark-dark; } 
-.no-link { text-decoration: none; }
+.no-link, .no-link:hover { text-decoration: none; }
 
 
 .text-faded { color: rgba(white, .7); }
