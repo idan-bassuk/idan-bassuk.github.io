@@ -107,9 +107,7 @@ section, aside { padding: 50px 0; min-height: 80%; }
         font-weight: 700;
         text-transform: uppercase;
         &:hover,
-        &:focus {
-            color: darken($theme-primary, 10%);
-        }
+        &:focus { color: darken($theme-primary, 10%); }
     }
     .nav {
         > li {
@@ -119,41 +117,31 @@ section, aside { padding: 50px 0; min-height: 80%; }
                 font-weight: 700;
                 font-size: 18px;
                 color: $theme-dark;
-                &:hover {
-                    color: $theme-secondary;
-                }
+                &:hover { color: $theme-secondary; }
             }
             &.active {
                 > a,
                 > a:focus {
                     color: $theme-secondary !important;
                     background-color: transparent;
-                    &:hover {
-                        background-color: transparent;
-                    }
+                    &:hover { background-color: transparent; }
                 }
             }
         }
     }
-    .navbar-brand {
-        padding: 10px;
-    }
+    .navbar-brand { padding: 10px; }
     @media (min-width: 768px) {
         background-color: transparent;
         border-color: rgba(white, .3);
         .navbar-header .navbar-brand {
             color: rgba(white, .7);
             &:hover,
-            &:focus {
-                color: white;
-            }
+            &:focus { color: white; }
         }
         .nav > li > a,
         .nav > li > a:focus {
             color: rgba(white, .7);
-            &:hover {
-                color: white;
-            }
+            &:hover { color: white; }
         }
         &.affix {
             background-color: white;
@@ -162,16 +150,12 @@ section, aside { padding: 50px 0; min-height: 80%; }
                 color: $theme-secondary;
                 font-size: 14px;
                 &:hover,
-                &:focus {
-                    color: darken($theme-secondary, 10%);
-                }
+                &:focus { color: darken($theme-secondary, 10%); }
             }
             .nav > li > a,
             .nav > li > a:focus {
-                color: $theme-dark;
-                &:hover {
-                    color: $theme-secondary;
-                }
+                color: $theme-dark-dark;
+                &:hover { color: $theme-secondary; }
             }
         }
 	.team {img {max-width: 200px;}}
@@ -259,18 +243,14 @@ header {
          margin-left: auto;
          margin-right: auto;
      }
-    .person-name {
-	color: $theme-primary-front;
-    }
+    .person-name { color: $theme-primary-front; }
 
     @media (min-width: 970px) {
 	.img-responsive {
          max-width: 80%;
        }
     }
-    p {
-        margin-bottom: 0;
-    }
+    p { margin-bottom: 0; }
 }
 
 .contact { margin: 10px; }
