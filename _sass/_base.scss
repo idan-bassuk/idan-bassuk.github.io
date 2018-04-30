@@ -4,10 +4,10 @@
 #profile-photo , #about-txt {padding-top: 25px; padding-bottom: 25px;}
 #about {
 	* h2 {font-family: 'Exo', sans-serif;}
-	* .contact-txt {font-family: 'Lato', sans-serif;}
 }
 
 .fancy {
+  font-family: 'Lato', sans-serif;
   line-height: 0.5;
   text-align: center;
 }
@@ -19,11 +19,11 @@
 .fancy span:after {
   content: "";
   position: absolute;
-  height: 5px;
+  height: 1px;
   border-bottom: 1px solid white;
   border-top: 1px solid white;
   top: 0;
-  width: 600px;
+  width: 30%;
 }
 .fancy span:before {
   right: 100%;
