@@ -66,17 +66,13 @@ hr {
     max-width: 50px;
 }
 
-hr.light {
-    border-color: white;
-}
+hr.light { border-color: white; }
 
 a {
     @include transition-all;
     color: $theme-primary-front;
     &:hover,
-    &:focus {
-        color: darken($theme-primary-front, 10%);
-    }
+    &:focus { color: darken($theme-primary-front, 10%); }
 }
 
 h1 { font-family: 'Bungee', cursive; }
@@ -218,9 +214,7 @@ header {
             }
 	    #hello { font-size: 40px; }
 	    #name { font-size: 85px !important; }
-            hr {
-                margin: 30px auto;
-            }
+            hr { margin: 30px auto; }
             p {
                 font-weight: 300;
                 color: rgba(white, .7);
@@ -228,13 +222,8 @@ header {
                 margin-bottom: 50px;
             }
         }
-
     }
-    .bottom {     
-	position: absolute;
-        width: 100%;
-        bottom: 10px;
-    }
+    .bottom { position: absolute; width: 100%; bottom: 10px; }
     @media (min-width: 768px) {
         min-height: 100%;
         .header-content {
@@ -259,15 +248,9 @@ header {
     }
 }
 
-#go { font-family: 'Oswald', sans-serif; size: 120px; }
-#public { font-family: 'Exo', sans-serif; size: 65px; font-weight: 300; }
-#title { font-family: 'Exo', sans-serif; }
-
 // Sections
 
-.section-heading {
-    margin-top: 0;
-}
+.section-heading { margin-top: 0; }
 
 .service-box {
     max-width: 400px;
@@ -294,9 +277,7 @@ header {
 .contact { margin: 10px; }
 
 .call-to-action {
-    h2 {
-        margin: 0 auto 20px;
-    }
+    h2 { margin: 0 auto 20px; }
 }
 
 // Bootstrap Overrides
@@ -307,9 +288,7 @@ body {
     font-family: "Lato, sans-serif;
 }
 
-.text-primary {
-    color: $theme-primary;
-}
+.text-primary { color: $theme-primary; }
 
 .no-gutter > [class*='col-'] {
     padding-right:0;
