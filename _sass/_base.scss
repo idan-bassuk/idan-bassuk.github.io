@@ -43,7 +43,7 @@
   margin-left: 15px;
 }
 
-svg { width: 100%; height: auto; max-height: 35px; }
+svg { width: 100%; max-width: 100px; height: auto; max-height: 35px; }
 svg path { fill: $theme-primary-light; }
 .social i, .social .i {
     width: 45px;
