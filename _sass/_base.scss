@@ -102,7 +102,7 @@ section, aside { padding: 50px 0; min-height: 80%; }
     @include sans-serif-font;
     @include transition-all;
     .navbar-header .navbar-brand {
-        color: $theme-primary;
+        color: $theme-dark-dark;
         @include sans-serif-font;
         font-weight: 700;
         text-transform: uppercase;
