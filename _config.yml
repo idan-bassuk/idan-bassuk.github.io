@@ -1,15 +1,16 @@
 # Site settings
 title: Idan Bassuk
+owner: Idan Bassuk
 email: idan@gmail.com
 description: Expert Data Scientist
-owner: Idan Bassuk
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://idanbass.github.io/" # the base hostname & protocol for your site
 
-social:
-  facebook-official: https://www.facebook.com/idan/
+social-facebook: https://www.facebook.com/idan/
+social-midium: https://www.midium.com/idan/
+social-linkedin: https://www.linkedin.com/idan/
   
-quote: If you can't explain it simply, you don't understand it well enough. 
+quote: If you can&#39;t explain it simply, you don&#39;t understand it well enough. 
 quote-by: Albert Einstein
 
 # Build settings
