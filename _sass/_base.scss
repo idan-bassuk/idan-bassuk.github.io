@@ -100,7 +100,16 @@ p {
 .bg-light .body { color: $theme-dark-dark; } 
 .bg-light .btn-default { color: $theme-dark-dark; } 
 .no-link, .no-link:hover { text-decoration: none; }
-
+.bg-light .btn-default,
+.bg-light .btn-default:active,
+.bg-light .btn-default:hover {
+    color: #4a4646;
+    border-color: #4a4646;
+    border-radius: 0;
+    border-width: 2px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
 
 .text-faded { color: rgba(white, .7); }
 
