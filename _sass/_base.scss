@@ -320,11 +320,11 @@ body {
 
 // Button Styles
 .btn-default {
-    @include button-variant($theme-dark, $theme-primary-light, $theme-primary-light);
+    @include button-variant($theme-primary-dark, $theme-primary-light, $theme-primary-dark); //$color, $background, $border
 }
 
 .btn-primary {
-    @include button-variant($theme-primary-light, $theme-primary, $theme-primary);
+    @include button-variant($theme-primary-light, $theme-primary, $theme-primary); //$color, $background, $border
 }
 .btn {
     margin: 15px;
