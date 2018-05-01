@@ -308,10 +308,14 @@ body {
 }
 
 // Button Styles
-.btn-default,
-.btn-default:active,
-.btn-default:hover {
+.btn-default {
     @include button-variant($theme-primary-dark, $theme-primary-light, $theme-primary-dark); //$color, $background, $border
+}
+.btn-primary {
+    @include button-variant($theme-primary-light, $theme-primary, $theme-primary); //$color, $background, $border
+}
+.btn {
+    margin: 15px;
     border-radius: 0;
     border-width: 2px;
     font-weight: 600;
@@ -319,14 +323,8 @@ body {
     letter-spacing: 2px;
     white-space: normal !important;
 }
-.btn-primary {
-    @include button-variant($theme-primary-light, $theme-primary, $theme-primary); //$color, $background, $border
-}
-.btn {
-    margin: 15px;
-}
 .btn:hover {
-    font-weight: 700;
+    font-weight: 900;
 }
 
 // Extras
