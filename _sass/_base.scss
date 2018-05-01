@@ -28,8 +28,8 @@
   content: "";
   position: absolute;
   height: 1px;
-  border-bottom: 1px solid white;
-  border-top: 1px solid white;
+  border-bottom: 1px solid $theme-primary-light;
+  border-top: 1px solid $theme-primary-light;
   top: 50%;
   width: 50%;
   max-width: 50px;
@@ -79,7 +79,7 @@ hr {
     max-width: 50px;
 }
 
-hr.light { border-color: white; }
+hr.light { border-color: $theme-primary-light; }
 
 a {
     @include transition-all;
@@ -100,8 +100,8 @@ p {
 }
 
 .bg-primary   { background-color: $theme-primary; }
-.bg-dark      { background-color: $theme-dark;    color: $theme-dark-light; }
-.bg-light     { background-color: white;          color: $theme-dark-dark; }
+.bg-dark      { background-color: $theme-dark;          color: $theme-dark-light; }
+.bg-light     { background-color: $theme-primary-light; color: $theme-dark-dark; }
 .bg-light hr  { border-color: $theme-dark-dark; } 
 .bg-light .title { color: $theme-secondary; font-weight: bold; font-size: 28px; } 
 .bg-light .info { font-size: 14px; } 
@@ -111,17 +111,17 @@ p {
 .bg-light .btn-default,
 .bg-light .btn-default:active,
 .bg-light .btn-default:hover {
-    color: #4a4646;
-    border-color: #4a4646;
+    color: $theme-dark-dark;
+    border-color: $theme-dark-dark;
     border-radius: 0;
     border-width: 2px;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 2px;
-    white-space:normal !important;
+    white-space: normal !important;
 }
 
-.text-faded { color: rgba(white, .7); }
+.text-faded { color: rgba($theme-primary-light, .7); }
 .post-separator { display: block; }
 @media (min-width: 992px) { .post-separator { display: none; }}
 
@@ -132,7 +132,7 @@ section, aside { padding: 50px 0; min-height: 80%; }
 // Navigation
 .navbar-default {
     display: none;
-    background-color: white;
+    background-color: $theme-primary-light;
     border-color: rgba($theme-dark-dark, .5);
     @include sans-serif-font;
     @include transition-all;
@@ -168,19 +168,19 @@ section, aside { padding: 50px 0; min-height: 80%; }
     @media (min-width: 768px) {
 	display: block;
         background-color: transparent;
-        border-color: rgba(white, .3);
+        border-color: rgba($theme-primary-light, .3);
         .navbar-header .navbar-brand {
-            color: rgba(white, .7);
+            color: rgba($theme-primary-light, .7);
             &:hover,
-            &:focus { color: white; }
+            &:focus { color: $theme-primary-light; }
         }
         .nav > li > a,
         .nav > li > a:focus {
-            color: rgba(white, .7);
-            &:hover { color: white; }
+            color: rgba($theme-primary-light, .7);
+            &:hover { color: $theme-primary-light; }
         }
         &.affix {
-            background-color: white;
+            background-color: $theme-primary-light;
             border-color: rgba($theme-dark, .5);
             .navbar-header .navbar-brand {
                 color: $theme-secondary;
@@ -209,7 +209,7 @@ header {
     background-position: left;
     background-image: url('../img/bg.jpg');
     text-align: center;
-    color: white;
+    color: $theme-primary-light;
     .overlay { 
     	display: block;
     	position: absolute;
@@ -236,7 +236,7 @@ header {
             hr { margin: 30px auto; }
             p {
                 font-weight: 300;
-                color: rgba(white, .7);
+                color: rgba($theme-primary-light, .7);
                 font-size: 16px;
                 margin-bottom: 50px;
             }
@@ -306,8 +306,8 @@ header {
 // Bootstrap Overrides
 
 body {
-    background-color: #1d3760;
-    color: white;
+    background-color: $theme-primary;
+    color: $theme-primary-light;
     font-family: 'Lato', sans-serif;
 }
 
@@ -320,11 +320,11 @@ body {
 
 // Button Styles
 .btn-default {
-    @include button-variant($theme-dark, white, white);
+    @include button-variant($theme-dark, $theme-primary-light, $theme-primary-light);
 }
 
 .btn-primary {
-    @include button-variant(white, $theme-primary, $theme-primary);
+    @include button-variant($theme-primary-light, $theme-primary, $theme-primary);
 }
 .btn {
     margin: 15px;
@@ -337,13 +337,13 @@ body {
 // Extras
 // -- Highlight Color Customization
 ::-moz-selection {
-    color: white;
+    color: $theme-primary-light;
     text-shadow: none;
     background: $theme-dark;
 }
 
 ::selection {
-    color: white;
+    color: $theme-primary-light;
     text-shadow: none;
     background: $theme-dark;
 }
