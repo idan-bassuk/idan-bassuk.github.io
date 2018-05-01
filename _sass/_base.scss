@@ -329,21 +329,3 @@ body {
 .btn:hover {
     font-weight: 900;
 }
-
-// Extras
-// -- Highlight Color Customization
-::-moz-selection {
-    color: $theme-primary-light;
-    text-shadow: none;
-    background: $theme-dark;
-}
-
-::selection {
-    color: $theme-primary-light;
-    text-shadow: none;
-    background: $theme-dark;
-}
-
-body {
-    -webkit-tap-highlight-color: $theme-dark;
-}
