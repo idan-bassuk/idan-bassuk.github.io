@@ -108,18 +108,7 @@ p {
 .bg-light .body { color: $theme-dark-dark; } 
 .bg-light .btn-default { color: $theme-dark-dark; } 
 .no-link, .no-link:hover { text-decoration: none; }
-.bg-light .btn-default,
-.bg-light .btn-default:active,
-.bg-light .btn-default:hover {
-    color: $theme-dark-dark;
-    border-color: $theme-dark-dark;
-    border-radius: 0;
-    border-width: 2px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    white-space: normal !important;
-}
+
 
 .text-faded { color: rgba($theme-primary-light, .7); }
 .post-separator { display: block; }
@@ -319,10 +308,17 @@ body {
 }
 
 // Button Styles
-.btn-default {
+.btn-default,
+.btn-default:active,
+.btn-default:hover {
     @include button-variant($theme-primary-dark, $theme-primary-light, $theme-primary-dark); //$color, $background, $border
+    border-radius: 0;
+    border-width: 2px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    white-space: normal !important;
 }
-
 .btn-primary {
     @include button-variant($theme-primary-light, $theme-primary, $theme-primary); //$color, $background, $border
 }
