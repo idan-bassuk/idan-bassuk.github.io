@@ -200,6 +200,7 @@ header {
     @include background-cover;
     background-position: left;
     background-image: url('../img/bg.jpg');
+    transition: background-image 1s ease-in-out;
     text-align: center;
     color: $theme-primary-light;
     .overlay { 
