@@ -59,7 +59,7 @@ footer>row { max-width: 800px; margin: auto; }
 footer .quote    { font-family: 'Exo', sans-serif; font-weight: bold; font-size: 26px; }
 footer .quote i  { font-size: 46px; display: block; }
 footer .quote-by { font-weight: 400; font-size: 18px; padding: 10px 0px; }
-@media (min-width: @screen-sm-min) { 
+ @media (min-width: 768px) {
 	footer .quote    { font-weight: bold; font-size: 30px; }
 	footer .quote i  { font-size: 56px; display: inline-block; } 
 	footer .quote-by { font-weight: 400; font-size: 22px; padding: 10px 0px; }
