@@ -6,10 +6,10 @@ description: Expert Data Scientist
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://idanbass.github.io/" # the base hostname & protocol for your site
 
-social-facebook: https://www.facebook.com/idan/
-social-midium: https://www.midium.com/idan/
-social-linkedin: https://www.linkedin.com/idan/
-social-youtube: https://www.linkedin.com/idan/
+social-facebook: https://www.facebook.com/idan.bass.5
+social-midium: https://medium.com/@Idan.Bassuk
+social-linkedin: https://www.linkedin.com/in/idanbass/
+social-youtube: https://www.youtube.com/
   
 quote: If you can&#39;t explain it simply, you don&#39;t understand it well enough. 
 quote-by: Albert Einstein
