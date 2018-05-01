@@ -1,7 +1,7 @@
 # Site settings
 title: Idan Bassuk
 owner: Idan Bassuk
-email: idan@gmail.com
+email: idan.bassuk@gmail.com
 description: Expert Data Scientist
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://idanbass.github.io/" # the base hostname & protocol for your site
