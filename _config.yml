@@ -2,14 +2,14 @@
 title: Idan Bassuk
 owner: Idan Bassuk
 email: idan.bassuk@gmail.com
-whoami: Sofware Engineer Focused on A.I.
+whoami: Sofware Engineer, Head of A.I. at Aidoc
 description: ""
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://idanbass.github.io/" # the base hostname & protocol for your site
+url: "https://idan-bassuk.github.io/" # the base hostname & protocol for your site
 
-social-facebook: https://www.facebook.com/idan.bass.5
+social-facebook: https://www.facebook.com/idan.bassuk
 social-medium: https://medium.com/@Idan.Bassuk
-social-linkedin: https://www.linkedin.com/in/idanbass/
+social-linkedin: https://www.linkedin.com/in/idanbassuk/
 social-youtube: https://www.youtube.com/playlist?list=PLOpAPAocPnu2aR8mqp6hkcUa88IKl4sXF
   
 quote: If you can&#39;t explain it simply, you don&#39;t understand it well enough. 
