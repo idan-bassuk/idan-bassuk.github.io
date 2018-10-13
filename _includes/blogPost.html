@@ -1,43 +1,26 @@
-<a class="no-link" href="https://medium.com/@Idan.Bassuk/automated-testing-of-deep-learning-systems-24b7ab3f8aa5">
-  <h3 class="title text-left">Automated Testing of Deep Learning Systems</h3>
+<a class="no-link" href="https://medium.com/@Idan.Bassuk/building-a-team-for-the-long-term-10cac924d4cf>
+  <h3 class="title text-left">Building a team for the long term</h3>
 </a>
-<div class="info text-left text-muted">2 min read (1 November 2017)</div>
+<div class="info text-left text-muted">2 min read (18 Sep 2018)</div>
 <br>
 <div class="body text-left">
-
-<p>Neural networks are now practically doing most of the coding instead of us
-  (and better than us) in many fields, but we don’t have a satisfactory methodology for testing their behavior.</p>
-
-<p>A very interesting recent paper that was covered today on “The Morning Paper” blog, 
-  shows a simple and elegant approach for testing neural networks.</p>
-
-<p>Basically they say that current Deep Learning testing methods, ‘depend heavily on manually labeled 
-  data and therefore often fail to expose erroneous behaviors for rare inputs’.</p>
-
-<p>Even if your test set is relatively large, it still might activate only a subset of the network’s neurons,
-  and the rest will not be tested. The untested part could still be activated in the real world by rare examples,
-  and cause extreme and unexpected behavior.</p>
-
-<p>They learn realistic augmentations to the test images, to maximize two objectives:
-
-<p>1) Similar to code coverage, which is a well known software testing technique, 
-  they try to maximize “neuron coverage” during their tests. They do this in order to maximize 
-  the probability they uncover as much of the possible (even if rare) wrong behaviors that were learned by the neural net.</p>
-
-<p>2) They take an ensemble of at least two comparable but independently trained models. 
-  They try to find samples which maximize the different models disagreement. 
-  To the best of my understanding, they use this approach since the images they’re using are learned augmentations, 
-  so they have no verified ground-truth for them.</p>
-
-<p>Maximizing both of these objectives in parallel helps uncover rare and potentially dangerous behaviors.</p>
-
-<p>They limit their learned augmentations by pre-defining the different transformations. 
-  For example — changing the lighting by adding a constant to all pixel values, and they learn 
-  the correct value that maximizes both objectives above.They don’t allow unrealistic adversarial 
-  examples which contain only tiny perturbations that will be undetected by the human eye.</p>
-
-<p>In the image you can see an example of a synthetic input learned by their approach (changing the lightning only), 
-  that induced extreme and dangerous behavior in a self-driving car network (crashing into the rails).</p>
-  
+<p><strong>I will look at it as my personal and professional failure if any of my team members will leave Aidoc&rsquo;s A.I. 
+  team after less than 5 years.</strong></p>
+<p>At the same time, I will be super happy for that team member who found a better place for himself, where he\she will be 
+  more satisfied, more challenged, better promoted or compensated.</p>
+<p>And when I say &ldquo;5 years&rdquo; I actually mean 20 years, but my experience has taught me it&rsquo;s better to sound 
+  realistic so people could connect to what I&rsquo;m saying, and in an industry with a mean-employee-lifetime of 1 year, 
+  even 5 years barely sounds realistic.</p>
+<p><strong>But &ldquo;5 years&rdquo; is the the best mixture of something that sounds realistic enough to be believable 
+  (all of us heard about some rare unicorns who are friends of friends of friends that did it even in companies 
+  that don&rsquo;t provide tenure), and unrealistic enough (a stretch goal) to serve as a &ldquo;compass&rdquo; guiding 
+  the way &mdash; rather than a concrete number.</strong></p>
+<p><strong>The reason this is super-important to me, is that I believe that a place that fulfills this goal &mdash; is a 
+  place where people are highly satisfied, motivated, challenged and are developing their career in routes that make them yet 
+  again satisfied, motivated and challenged.</strong></p>
+<p>To me this makes sense even in the &ldquo;cold&rdquo; business sense (at least for companies like us that build themselves 
+  to be long term companies, because it does come with short term costs), and creates the type of magic circle that is 
+  exactly what a company needs to continue attracting the best-of-the-best, in their masses. This is the type of company 
+  that I would like to work for, and that&rsquo;s why this is what I intend to build.</p>
 <img class="img-responsive" src="https://cdn-images-1.medium.com/max/800/1*tS4DTT_a2MF5uWgJHbVsIA.png">
 </div>
