@@ -110,7 +110,8 @@ p {
 .bg-light .info { font-size: 14px; } 
 .bg-light .body { color: $theme-dark-dark; } 
 .bg-light .btn-default { color: $theme-dark-dark; } 
-.no-link, .no-link:hover { text-decoration: none; }
+.no-link { text-decoration: none; }
+.no-link:hover { color: $theme-secondary; text-decoration: underline; }
 
 
 .text-faded { color: rgba($theme-primary-light, .7); }
