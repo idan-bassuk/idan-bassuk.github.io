@@ -86,7 +86,7 @@ hr.light { border-color: $theme-primary-light; }
 
 a {
     @include transition-all;
-    color: $theme-primary-light;
+    color: $theme-primary;
     &:hover,
     &:focus { color: darken($theme-primary-light, 10%); }
 }
